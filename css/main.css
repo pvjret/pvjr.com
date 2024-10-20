@@ -371,6 +371,10 @@ nav ul li a:hover {
     border-radius: 5px;
     background-color: #fff;
     vertical-align: middle;
+    /* added later */
+    /* aspect-ratio: 1/1; */
+    margin-left: auto;
+    margin-right: auto;
 }
 .item img {
     vertical-align: middle;
@@ -1177,7 +1181,8 @@ footer p {
 
 @media only screen and (max-width : 650px) {
     .connecting_bann {
-        right: 4px;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
 @media only screen and (max-width : 440px) {

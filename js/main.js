@@ -59,24 +59,11 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
 })(document, window, jQuery);
 
 }
-/*
-     FILE ARCHIVED ON 16:13:24 Apr 08, 2022 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 11:46:43 Oct 20, 2024.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.562
-  exclusion.robots: 0.02
-  exclusion.robots.policy: 0.009
-  esindex: 0.011
-  cdx.remote: 4.369
-  LoadShardBlock: 144.836 (3)
-  PetaboxLoader3.datanode: 177.836 (6)
-  PetaboxLoader3.resolve: 74.261 (3)
-  load_resource: 124.835 (2)
-  loaddict: 21.543
-*/
+const submits = document.querySelectorAll('.button_send')
+
+submits.forEach( submit => {
+  submit.addEventListener( 'click', (e)=> {
+    e.preventDefault();
+  })
+})
